@@ -2,7 +2,8 @@ CREATE TABLE IF NOT EXISTS esquema."PROGRAMADORES"
 (
     id_programador bigint NOT NULL,
     nombre text COLLATE pg_catalog."default",
-    apellido text COLLATE pg_catalog."default",
+    apellido1 text COLLATE pg_catalog."default",
+    apeliido2 text COLLATE pg_catalog."default",
     email text COLLATE pg_catalog."default",
     especialidad text COLLATE pg_catalog."default",
     fecha_alta date,
