@@ -4,6 +4,7 @@ CREATE TABLE IF NOT EXISTS esquema."PROGRAMADORES"
     nombre text COLLATE pg_catalog."default",
     apellido1 text COLLATE pg_catalog."default",
     apellido2 text COLLATE pg_catalog."default",
+    nick text COLLATE pg_catalog."default",
     email text COLLATE pg_catalog."default",
     especialidad text COLLATE pg_catalog."default",
     fecha_alta date,
