@@ -39,10 +39,18 @@ CREATE TABLE IF NOT EXISTS esquema."TAREAS"
     descripcion text COLLATE pg_catalog."default",
     estado boolean,
     prioridad text COLLATE pg_catalog."default",
-    horas_estimadas bigint,
     id_programador bigint,
     id_sprint bigint,
     CONSTRAINT "TAREAS_pkey" PRIMARY KEY (id_tarea)
+);
+
+CREATE TABLE IF NOT EXISTS esquema."ESTIMACION_TAREA"
+(
+    id_tarea bigint NOT NULL,
+    horas_estimadas bigint,
+    horas_totales bigint,
+    horas_completadas bigint,
+    CONSTRAINT "ESTIMACION_TAREA_pkey" PRIMARY KEY (id_tarea)
 );
 
 ALTER TABLE IF EXISTS esquema."SPRINTS"
