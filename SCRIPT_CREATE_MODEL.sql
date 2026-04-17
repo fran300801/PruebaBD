@@ -18,6 +18,7 @@ CREATE TABLE IF NOT EXISTS esquema."PROYECTOS"
     descripcion text COLLATE pg_catalog."default",
     fecha_inicio date,
     fecha_fin date,
+    fecha_actualizacion date,
     CONSTRAINT "PROYECTOS_pkey" PRIMARY KEY (id_proyecto)
 );
 
