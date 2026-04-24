@@ -8,6 +8,7 @@ CREATE TABLE IF NOT EXISTS esquema."PROGRAMADORES"
     email text COLLATE pg_catalog."default",
     especialidad text COLLATE pg_catalog."default",
     fecha_alta date,
+    nacionalidad text COLLATE pg_catalog."default",
     CONSTRAINT "PROGRAMADORES_pkey" PRIMARY KEY (id_programador)
 );
 
