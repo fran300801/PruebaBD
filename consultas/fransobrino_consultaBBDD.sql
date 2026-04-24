@@ -1,0 +1,1 @@
+select id_proyecto, nombre from esquema."PROYECTOS";
