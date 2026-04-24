@@ -51,8 +51,6 @@ CREATE TABLE IF NOT EXISTS esquema."ESTADO"
 
 );
 
-
-
 CREATE TABLE IF NOT EXISTS esquema."ESTIMACION_TAREA"
 (
     id_tarea bigint NOT NULL,
