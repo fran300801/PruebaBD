@@ -8,6 +8,7 @@ CREATE TABLE IF NOT EXISTS esquema."PROGRAMADORES"
     email text COLLATE pg_catalog."default",
     especialidad text COLLATE pg_catalog."default",
     fecha_alta date,
+    nacionalidad_usuario text COLLATE pg_catalog."default",
     CONSTRAINT "PROGRAMADORES_pkey" PRIMARY KEY (id_programador)
 );
 
@@ -16,9 +17,11 @@ CREATE TABLE IF NOT EXISTS esquema."PROYECTOS"
     id_proyecto bigint NOT NULL,
     nombre text COLLATE pg_catalog."default",
     descripcion text COLLATE pg_catalog."default",
+    localizacion_fisica text,
     fecha_inicio date,
     fecha_fin date,
     fecha_actualizacion date,
+    coste number,
     CONSTRAINT "PROYECTOS_pkey" PRIMARY KEY (id_proyecto)
 );
 
@@ -30,6 +33,7 @@ CREATE TABLE IF NOT EXISTS esquema."SPRINTS"
     fecha_fin date,
     estado boolean,
     id_proyecto bigint,
+    horas_invertidas bigint,
     CONSTRAINT "SPRINTS_pkey" PRIMARY KEY (id_sprint)
 );
 
@@ -39,7 +43,7 @@ CREATE TABLE IF NOT EXISTS esquema."TAREAS"
     titulo text COLLATE pg_catalog."default",
     descripcion text COLLATE pg_catalog."default",
     prioridad text COLLATE pg_catalog."default",
-    id_programador bigint,
+    id_programadores bigint,
     id_sprint bigint,
     fecha_vencimiento date,
     CONSTRAINT "TAREAS_pkey" PRIMARY KEY (id_tarea)
@@ -49,6 +53,8 @@ CREATE TABLE IF NOT EXISTS esquema."ESTADO"
 (
     id bigint,CONSTRAINT "TAREAS_pkey" PRIMARY KEY (id_tarea)
     descripcion text COLLATE pg_catalog."default",
+    fecha_creacion date
+    
 
 );
 
