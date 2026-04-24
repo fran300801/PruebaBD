@@ -1,0 +1,1 @@
+select id_proyecto,nombre localizacion from PROYECTOS WHERE COSTE >2000;
