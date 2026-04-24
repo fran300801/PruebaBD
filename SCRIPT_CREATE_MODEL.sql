@@ -16,6 +16,7 @@ CREATE TABLE IF NOT EXISTS esquema."PROYECTOS"
     id_proyecto bigint NOT NULL,
     nombre text COLLATE pg_catalog."default",
     descripcion text COLLATE pg_catalog."default",
+    localizacion_fisica text,
     fecha_inicio date,
     fecha_fin date,
     fecha_actualizacion date,
