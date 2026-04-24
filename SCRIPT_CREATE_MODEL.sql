@@ -32,6 +32,7 @@ CREATE TABLE IF NOT EXISTS esquema."SPRINTS"
     fecha_fin date,
     estado boolean,
     id_proyecto bigint,
+    horas_invertidas bigint,
     CONSTRAINT "SPRINTS_pkey" PRIMARY KEY (id_sprint)
 );
 
