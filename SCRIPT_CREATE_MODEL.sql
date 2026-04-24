@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS esquema."TAREAS"
     descripcion text COLLATE pg_catalog."default",
     prioridad text COLLATE pg_catalog."default",
     id_programador bigint,
-    id_sprint bigint,
+    id_sprints bigint,
     CONSTRAINT "TAREAS_pkey" PRIMARY KEY (id_tarea)
 );
 
