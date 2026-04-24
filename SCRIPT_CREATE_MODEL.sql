@@ -69,6 +69,9 @@ ALTER TABLE IF EXISTS esquema."SPRINTS"
     ON DELETE NO ACTION;
 
 
+ALTER TABLE IF EXISTS esquema."SPRINTS"  ADD hora_subida TIME;
+
+
 ALTER TABLE IF EXISTS esquema."TAREAS"
     ADD CONSTRAINT fk_programador FOREIGN KEY (id_programador)
     REFERENCES esquema."PROGRAMADORES" (id_programador) MATCH SIMPLE
