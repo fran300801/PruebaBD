@@ -82,3 +82,10 @@ ALTER TABLE IF EXISTS esquema."TAREAS"
     ON UPDATE NO ACTION
     ON DELETE NO ACTION;
 END;
+
+
+ALTER TABLE IF EXISTS esquema."TAREAS"
+    ADD fecha_entrega date;
+
+
+
