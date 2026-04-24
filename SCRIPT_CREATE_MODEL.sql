@@ -51,6 +51,8 @@ CREATE TABLE IF NOT EXISTS esquema."ESTADO"
 (
     id bigint,CONSTRAINT "TAREAS_pkey" PRIMARY KEY (id_tarea)
     descripcion text COLLATE pg_catalog."default",
+    fecha_creacion date
+    
 
 );
 
