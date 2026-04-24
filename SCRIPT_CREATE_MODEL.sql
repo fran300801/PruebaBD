@@ -19,6 +19,7 @@ CREATE TABLE IF NOT EXISTS esquema."PROYECTOS"
     fecha_inicio date,
     fecha_fin date,
     fecha_actualizacion date,
+    coste number,
     CONSTRAINT "PROYECTOS_pkey" PRIMARY KEY (id_proyecto)
 );
 
