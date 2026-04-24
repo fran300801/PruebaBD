@@ -41,6 +41,7 @@ CREATE TABLE IF NOT EXISTS esquema."TAREAS"
     prioridad text COLLATE pg_catalog."default",
     id_programador bigint,
     id_sprint bigint,
+    fecha_vencimiento date,
     CONSTRAINT "TAREAS_pkey" PRIMARY KEY (id_tarea)
 );
 
@@ -84,8 +85,7 @@ ALTER TABLE IF EXISTS esquema."TAREAS"
 END;
 
 
-ALTER TABLE IF EXISTS esquema."TAREAS"
-    ADD fecha_entrega date;
+
 
 
 
